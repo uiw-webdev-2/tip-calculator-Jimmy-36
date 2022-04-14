@@ -10,13 +10,19 @@
     <main>
       <section>
           <!--Amount-->
-          <input type="text" />
+          <input id="amount" type="text" />
           <!--Tip Percentage-->
-          <input type="text" />
+          <input id="tipPercent" type="text" />
           <!--Locale Dropdown-->
-          <select>
+          <select id="select">
             <option value="en">USD</option>
+            <option value="ja">JPY</option>
+            <option value="en-GB">GBP</option>
+            <option value="ko">KRW</option>
+            <option value="zh">CNY</option>
           </select>
+          <button id="myBtn" class="cta-button">Click me!</button>
+          <div id="message"></div>
       </section>
     </main>
   </body>
