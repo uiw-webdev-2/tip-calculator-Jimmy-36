@@ -31,10 +31,10 @@
  
 
   document.getElementById("myBtn").onclick = function() { 
-    let amount = document.getElementById("amount").value;
-    let tipPercent = document.getElementById("tipPercent").value;
-    
-    var skillsSelect = document.getElementById("select");
+    let amount = parseInt(document.getElementById("amount").value); //setting amount equal to the value "amount" from the HTML
+    let tipPercent = parseInt(document.getElementById("tipPercent").value) ; //same as above but with the "tipPercent" value
+    //parseInt() is used to change a string value into a number, could also use parseFloat() for easier decimals
+    var skillsSelect = document.getElementById("select"); //setting variables to use for the locale and currency
     var skillsValue = document.getElementById("select").value;
     var selectedText = skillsSelect.options[skillsSelect.selectedIndex].text;
 
